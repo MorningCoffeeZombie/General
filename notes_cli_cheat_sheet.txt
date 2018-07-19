@@ -39,7 +39,7 @@ rem my comment
 >>%~dp0"examplefolder\examplefile.txt"
 
 :: Save output to a file (named "log.txt" for example) which is declared as a variable at the top of the script
-SET %logFile%=%~n0.log
+SET logFile=%~n0.log
 >>%logFile%
 
 :: Sets the variable "isodate" to be the date formatted as YYYMMDD-HHmm. Useful for appending timestamps.
