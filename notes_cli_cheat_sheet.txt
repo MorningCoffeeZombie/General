@@ -1,5 +1,3 @@
-#:: Updated: 5/15/2018
-
 :::::::::::::::::::::::::::::::::
 :: BBBBB	    A		TTTTTTTTT
 :: B	B	   A A			T
@@ -98,7 +96,8 @@ my comment
 $Env:
 #ex: $Env:SystemRoot
 
-
+# How to find what version of PowerShell you are running:
+$psversiontable
 
 
 
@@ -117,19 +116,17 @@ $Env:
 # Prefix to allow script execution
 #!/bin/bash
 
-# How to find what version of PowerShell you are running:
-$psversiontable
-
 # Pause currently running command (2 variants)
 $HOST.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown") | OUT-NULL
 $HOST.UI.RawUI.Flushinputbuffer()
 
 cmd /c pause | out-null
 
+# Create a variable named $TODAY with the date in ISO format
+TODAY=`date '+%Y%m%d-%H%M'`
 
-
-
-
+# Create a var name "me" which allegedly produces [the name of the file you are running]. This is untested.
+me=`basename "$0"`
 
 
 ##::##::##::##::##::##::##::##::##::##::##::
