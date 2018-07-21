@@ -148,7 +148,15 @@ If you don't specify a number then the standard output stream is assumed but you
 /dev/null is the null device it takes any input you want and throws it away. It can be used to suppress any output.
 
 
-
+# FORMAT TEXT AS TABLE
+Instead of using echo, Use printf command.
+You can use %s for string and %d for integer, something like this,
+printf " %s %d", $string1 $int1
+You can space according to your screen, by using %20s for using 20 characters for the string, %12d for the integer.
+Format control options are also available :
+\n : newline
+\t : tab(horizontal)
+\v : tab(vertical)
 
 
 
