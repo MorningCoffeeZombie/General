@@ -125,8 +125,20 @@ cmd /c pause | out-null
 # Create a variable named $TODAY with the date in ISO format
 TODAY=`date '+%Y%m%d-%H%M'`
 
-# Create a var name "me" which allegedly produces [the name of the file you are running]. This is untested.
-me=`basename "$0"`
+# Say the name of this current script.
+echo
+echo "# arguments called with ---->  ${@}     "
+echo "# \$1 ---------------------->  $1       "
+echo "# \$2 ---------------------->  $2       "
+echo "# path to me --------------->  ${0}     "
+echo "# parent path -------------->  ${0%/*}  "
+echo "# my name ------------------>  ${0##*/} "
+echo
+
+
+
+
+
 
 
 ##::##::##::##::##::##::##::##::##::##::##::
