@@ -1,0 +1,40 @@
+exit
+##::##::##::##::##::##::##::##::##::##::##::
+#:: L		IIIII	N   N	K  K	 SSSSS
+#:: L		  I		NN  N	K K		S
+#:: L		  I		N N N	KK		 SSSSS
+#:: L		  I		N  NN	K K			  S
+#:: LLLLL	IIIII	N   N	K  K	 SSSSS
+##::##::##::##::##::##::##::##::##::##::##::
+##:: HELPFUL LINKS
+
+
+##:: CLI		DESCRIPTION			LINK
+##::##::##::##::##::##::##::##::##::##::
+##:: BAT		Env. variables		https://ss64.com/nt/syntax-variables.html
+##:: BAT v PS	CLI delta			http://www.itprotoday.com/management-mobility/batch-powershell-syntax-differences 
+##:: Powershell	Env. variables		https://ss64.com/ps/syntax-automatic-variables.html
+##:: Powershell	Env. variables		https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-6
+##:: 7-Zip		File Compression	https://sevenzip.osdn.jp/chm/cmdline/
+##:: Winzip		File Compression	http://www.memecode.com/docs/winzip.html
+##:: Winzip		File Compression	http://www.winzip.com/win/en/downarc.html
+##:: 
+##:: 
+##:: 
+##:: 
+##:: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
