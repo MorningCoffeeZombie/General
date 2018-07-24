@@ -24,3 +24,6 @@ $Env:
 
 # How to find what version of PowerShell you are running:
 $psversiontable
+
+# Tail files in PS
+Get-Content ./log.log -Wait -Tail 10
