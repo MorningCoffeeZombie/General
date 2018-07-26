@@ -1,3 +1,7 @@
+#!/bin/sh
+
+
+
 	PS3='Enter your /tmp partition type: '
 	options=("vfat" "ext2" "ext3" "ext4" "ntfs" "ADVANCED" "Quit")
 	select partition in "${options[@]}"
