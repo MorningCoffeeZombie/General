@@ -39,3 +39,6 @@ $MyInvocation.MyCommand.Name
 # Show date in 1460 in the past and another 1460 days in the future. This is usefull for creating cut-off dates:
 (Get-Date).AddDays(-1460)
 (Get-Date).AddDays(1460)
+
+# Redirect output of a command to null (add this to end of the code)
+ > $null
