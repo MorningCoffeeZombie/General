@@ -36,6 +36,11 @@ Add-Content $logFile -value "Log file has been established!"
 # How to get the name of the currently running script (this file). This will include the file extension.
 $MyInvocation.MyCommand.Name
 
+# Different formats of dates
+[$([DateTime]::Now)]
+Get-Date -Format yyyyMMdd
+Get-Date -Format HHmmss
+
 # Show date in 1460 in the past and another 1460 days in the future. This is usefull for creating cut-off dates:
 (Get-Date).AddDays(-1460)
 (Get-Date).AddDays(1460)
