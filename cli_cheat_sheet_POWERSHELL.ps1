@@ -42,3 +42,4 @@ $MyInvocation.MyCommand.Name
 
 # Redirect output of a command to null (add this to end of the code)
  > $null
+ 2>&1> $null
