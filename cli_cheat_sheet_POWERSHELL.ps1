@@ -36,6 +36,9 @@ Add-Content $logFile -value "Log file has been established!"
 # How to get the name of the currently running script (this file). This will include the file extension.
 $MyInvocation.MyCommand.Name
 
+# State the name of the directory [this script] is located in
+$PSScriptRoot
+
 # Different formats of dates
 [$([DateTime]::Now)]
 Get-Date -Format yyyyMMdd
