@@ -52,3 +52,6 @@ Get-Date -Format HHmmss
 # Redirect output of a command to null (add this to end of the code)
  > $null
  2>&1> $null
+
+# Microsoft's stupid way of doing diff:
+compare-object (get-content one.txt) (get-content two.txt)
