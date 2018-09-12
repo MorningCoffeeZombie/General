@@ -55,3 +55,6 @@ Get-Date -Format HHmmss
 
 # Microsoft's stupid way of doing diff:
 compare-object (get-content one.txt) (get-content two.txt)
+
+# Escape characters
+`
