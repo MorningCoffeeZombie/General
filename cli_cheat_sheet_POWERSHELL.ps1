@@ -58,3 +58,7 @@ compare-object (get-content one.txt) (get-content two.txt)
 
 # Escape characters
 `
+
+# Prompt user for input stored to variable
+$username = Read-Host -Prompt "Enter your username: "
+$sshKey = Read-Host -AsSecureString -Prompt "Enter your git credentials: "
