@@ -37,6 +37,12 @@ Add-Content $logFile -value "Log file has been established!"
 # How to get the name of the currently running script (this file). This will include the file extension.
 $MyInvocation.MyCommand.Name
 
+# Location of the currently running script (this directory)
+$thisDir = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
+
+# Full path of the current script and its name
+$thisFile = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition) + ($MyInvocation.MyCommand.Name + ".log")
+
 # State the name of the directory [this script] is located in
 $PSScriptRoot
 
