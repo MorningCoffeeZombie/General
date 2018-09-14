@@ -69,3 +69,7 @@ compare-object (get-content one.txt) (get-content two.txt)
 # Prompt user for input stored to variable
 $username = Read-Host -Prompt "Enter your username: "
 $sshKey = Read-Host -AsSecureString -Prompt "Enter your git credentials: "
+
+# Name of the PC you are running on (2 methods)
+Hostname
+HOSTNAME.EXE
