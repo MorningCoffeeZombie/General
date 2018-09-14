@@ -71,5 +71,5 @@ $username = Read-Host -Prompt "Enter your username: "
 $sshKey = Read-Host -AsSecureString -Prompt "Enter your git credentials: "
 
 # Name of the PC you are running on (2 methods)
-Hostname
+$machineName = Hostname
 HOSTNAME.EXE
