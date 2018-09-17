@@ -74,3 +74,11 @@ $sshKey = Read-Host -AsSecureString -Prompt "Enter your git credentials: "
 $machineName = Hostname
 HOSTNAME.EXE
 $env:computername
+
+# Use Task Scheduler to perform tasks with a gMSA account
+$action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument "-ExecutionPolicy bypass -File ""E:\inhere\runMe.ps1"""
+$trigger = New-ScheduledTaskTrigger -At 22:00 -Daily
+$principal = New-ScheduledTaskPrincipal -UserID DOMAIN\gMSAName$ -LogonType Password -RunLevel Highest
+$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -Hidden -ExecutionTimeLimit (New-TimeSpan -Minutes 30) -RestartCount 3 -Compatibility Win8 -DontStopOnIdleEnd
+$description = "This is where you describe the specifics of this task which is named mAdminTask in the line of text below"
+Register-ScheduledTask myAdminTask –Action $action –Trigger $trigger -Principal $principal -Settings $settings -Description $description
