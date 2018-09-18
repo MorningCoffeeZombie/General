@@ -80,3 +80,7 @@ $principal = New-ScheduledTaskPrincipal -UserID DOMAIN\gMSAName$ -LogonType Pass
 $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -Hidden -ExecutionTimeLimit (New-TimeSpan -Minutes 30) -RestartCount 3 -Compatibility Win8 -DontStopOnIdleEnd
 $description = "This is where you describe the specifics of this task which is named mAdminTask in the line of text below"
 Register-ScheduledTask myAdminTask –Action $action –Trigger $trigger -Principal $principal -Settings $settings -Description $description
+
+# Format output text as table
+'t
+Write-Host "ColumnA'tColumnB'tColumnC"
