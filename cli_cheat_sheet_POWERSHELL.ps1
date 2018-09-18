@@ -82,5 +82,18 @@ $description = "This is where you describe the specifics of this task which is n
 Register-ScheduledTask myAdminTask –Action $action –Trigger $trigger -Principal $principal -Settings $settings -Description $description
 
 # Format output text as table
-'t
-Write-Host "ColumnA'tColumnB'tColumnC"
+function tableDemo() {
+	$myTable = @()
+	
+	$objMyList = New-Object System.Object
+	$objMyList | Add-Member -type NoteProperty -name "Col1" -value "col1row1 Value"
+	$objMyList | Add-Member -type NoteProperty -name "Col2" -value "col2row1 Value"
+	$myTable += $objMyList
+ 
+	$objMyList = New-Object System.Object
+	$objMyList | Add-Member -type NoteProperty -name "Col1" -value "col1row2 Value"
+	$objMyList | Add-Member -type NoteProperty -name "Col2" -value "col2row2 Value"
+	$myTable += $objMyList
+	
+	$myTable | Format-Table "Col1","Col2" -AutoSize
+}
