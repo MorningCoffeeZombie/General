@@ -38,14 +38,12 @@ Add-Content $logFile -value "Log file has been established!"
 $MyInvocation.MyCommand.Name
 
 # Location of the currently running script (this directory)
+$PSScriptRoot
 $thisDir = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
 
 # Full path of the current script and its name (2 ways)
 $thisFile = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition) + ($MyInvocation.MyCommand.Name + ".log")
 $thisFile = $PSScriptRoot + "\" + ($MyInvocation.MyCommand.Name + ".log")
-
-# State the name of the directory [this script] is located in
-$PSScriptRoot
 
 # Different formats of dates
 [$([DateTime]::Now)]
