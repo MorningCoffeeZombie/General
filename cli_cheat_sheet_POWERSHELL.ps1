@@ -97,3 +97,8 @@ function tableDemo() {
 	
 	$myTable | Format-Table "Col1","Col2" -AutoSize
 }
+
+# Fix "Unsigned certificate" issues when running a script from another PC:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
