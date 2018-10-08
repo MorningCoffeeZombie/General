@@ -13,6 +13,7 @@ exit
 ##::##::##::##::##::##::##::##::##::##::
 ##:: BAT		Env. variables		https://ss64.com/nt/syntax-variables.html
 ##:: BAT		Cmdkey Password Mgt	https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey
+##:: BAT		Symlinks		https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink
 ##:: BAT v PS	CLI delta			http://www.itprotoday.com/management-mobility/batch-powershell-syntax-differences 
 ##:: Powershell	Env. variables		https://ss64.com/ps/syntax-automatic-variables.html
 ##:: Powershell	Env. variables		https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-6
