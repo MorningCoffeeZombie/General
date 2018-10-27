@@ -60,3 +60,10 @@ printf "And \t the n \t are makes a new line \n"
 BOLDFONT=$(tput bold)
 NORMALFONT=$(tput sgr0)
 
+# Convert variable to upper case letters
+VARIABLE=Hello There My FRIend
+echo ${VARIABLE^^}
+
+# Convert variable to lower case letters
+VARIABLE=Hellow There My FRIend
+echo ${VARIABLE,,}
