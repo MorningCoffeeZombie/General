@@ -71,3 +71,6 @@ echo ${VARIABLE^^}
 # Convert variable to lower case letters
 VARIABLE=Hellow There My FRIend
 echo ${VARIABLE,,}
+
+# Find your current Public IP Address
+curl icanhazip.com
