@@ -74,3 +74,7 @@ echo ${VARIABLE,,}
 
 # Find your current Public IP Address
 curl icanhazip.com
+
+# Echo contents of an array
+ar_my_array=(this is "my favorite" demonstration of an array)
+echo "${ar_my_array*]}"
