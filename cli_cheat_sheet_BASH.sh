@@ -24,6 +24,7 @@ TODAY=`date '+%Y%m%d-%H%M'`
 
 # Say the name of this current script. Multiple variants:
 echo
+echo "Script name ---------------->  $0       "
 echo "# arguments called with ---->  ${@}     "
 echo "# \$1 ---------------------->  $1       "
 echo "# \$2 ---------------------->  $2       "
