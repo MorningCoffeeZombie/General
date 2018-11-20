@@ -59,6 +59,9 @@ printf "And \t the n \t are makes a new line \n"
 # Create a variable to bold terminal text. This work just like opening an closing <bold></bold> tags in html
 BOLDFONT=$(tput bold)
 NORMALFONT=$(tput sgr0)
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 
 # Convert variable to upper case letters
 VARIABLE=Hello There My FRIend
