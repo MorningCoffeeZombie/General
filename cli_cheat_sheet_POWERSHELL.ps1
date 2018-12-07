@@ -101,4 +101,9 @@ function tableDemo() {
 # Fix "Unsigned certificate / not digitally signed" issues when running a script from another PC:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
+# Find and replace within all files inside of variable $FINDIN
+(Get-Content $FINDIN\*) -replace 'Look for me', 'Replace with me' | Set-Content $FINDIN\*
+# or:
+(Get-Content $FINDIN\*) -replace "$firstVar$secondVar", $firstVar | Set-Content $FINDIN\*
+
 
