@@ -58,6 +58,10 @@ start /min myfile.bat
 :: This one is an entry for Windows Task Scheduler
 cmd.exe /c start /min myfile.bat ^& exit
 
+:: Launch a PowerShell script from Batch cmd. This script will launch the .ps1 file with the same name as the .bat in the same directory...change the "%~dpn0" to adjust location/name
+PowerShell.exe -Command "& '%~dpn0.ps1'" %1 %2
+    :: The %1 and %2 arguments can be passed onto PoSh as seen above without error
+
 :: The variables declared in this script cannot be called upon by anyther script/environment:
 SETLOCAL
 :: Same as above, but also tells CMD to "wait until you're about to parse a variable before reading it's contents". aka Don't read the variable until absolutely necessary.
