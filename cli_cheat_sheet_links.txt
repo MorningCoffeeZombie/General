@@ -21,7 +21,7 @@ exit
 ##:: Winzip		File Compression	http://www.memecode.com/docs/winzip.html
 ##:: Winzip		File Compression	http://www.winzip.com/win/en/downarc.html
 ##:: [Regex]		Regular expression help	https://regexr.com/
-##:: 
+##:: Powershell Regex statements  https://kevinmarquette.github.io/2017-07-31-Powershell-regex-regular-expression/
 ##:: 
 ##:: 
 ##:: 
