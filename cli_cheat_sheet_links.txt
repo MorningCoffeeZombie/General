@@ -10,18 +10,18 @@ exit
 
 
 ##:: CLI		DESCRIPTION			LINK
-##::##::##::##::##::##::##::##::##::##::
+##::##::##::##::##::##::##::##::##::##::##::##::##::##::##::
 ##:: BAT		Env. variables		https://ss64.com/nt/syntax-variables.html
 ##:: BAT		Cmdkey Password Mgt	https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey
 ##:: BAT		Symlinks		https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink
 ##:: BAT v PS	CLI delta			http://www.itprotoday.com/management-mobility/batch-powershell-syntax-differences 
-##:: Powershell	Env. variables		https://ss64.com/ps/syntax-automatic-variables.html
-##:: Powershell	Env. variables		https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-6
+##:: Powershell	Env. variables			https://ss64.com/ps/syntax-automatic-variables.html
+##:: Powershell	Env. variables			https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-6
 ##:: 7-Zip		File Compression	https://sevenzip.osdn.jp/chm/cmdline/
 ##:: Winzip		File Compression	http://www.memecode.com/docs/winzip.html
 ##:: Winzip		File Compression	http://www.winzip.com/win/en/downarc.html
 ##:: [Regex]		Regular expression help	https://regexr.com/
-##:: Powershell Regex statements  https://kevinmarquette.github.io/2017-07-31-Powershell-regex-regular-expression/
+##:: Powershell 	Regex statements  	https://kevinmarquette.github.io/2017-07-31-Powershell-regex-regular-expression/
 ##:: 
 ##:: 
 ##:: 
