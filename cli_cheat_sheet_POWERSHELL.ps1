@@ -106,4 +106,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 # or:
 (Get-Content $FINDIN\*) -replace "$firstVar$secondVar", $firstVar | Set-Content $FINDIN\*
 
+# Enable PoSh scripting on device (open PoSh in admin mode)
+Set-ExecutionPolicy RemoteSigned
+
 
