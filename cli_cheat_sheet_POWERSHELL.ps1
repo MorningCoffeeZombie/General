@@ -58,8 +58,11 @@ Get-Date -Format HHmmss
  > $null
  2>&1> $null
 
-# Microsoft's stupid way of doing diff:
+# Microsoft's stupid way of doing `diff`:
 compare-object (get-content one.txt) (get-content two.txt)
+
+# Microsoft's stupid way of doing `tail -f`:
+Get-Content -Path "C:\scripts\test.txt" -Wait
 
 # Escape characters
 `
