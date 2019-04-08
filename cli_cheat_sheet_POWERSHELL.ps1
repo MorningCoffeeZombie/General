@@ -64,6 +64,9 @@ compare-object (get-content one.txt) (get-content two.txt)
 # Microsoft's stupid way of doing `tail -f`:
 Get-Content -Path "C:\scripts\test.txt" -Wait
 
+# microsoft's way of using `curl` to find your own IP address (resolver is interchangable)
+Invoke-RestMethod "icanhazip.com"
+
 # Escape characters
 `
 
