@@ -79,7 +79,9 @@ $machineName = Hostname
 HOSTNAME.EXE
 $env:computername
 
-# List UNC file paths of available drives
+# List UNC file paths of available drives (or for `net use` also declare mount point in script)
+Get-SmbConnection
+Get-SmbMapping
 net use
 
 # List all available drives on the pc
