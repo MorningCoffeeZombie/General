@@ -79,6 +79,12 @@ $machineName = Hostname
 HOSTNAME.EXE
 $env:computername
 
+# List UNC file paths of available drives
+net use
+
+# List all available drives on the pc
+Get-PSDrive
+
 # Use Task Scheduler to perform tasks with a gMSA account
 $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument "-ExecutionPolicy bypass -File ""E:\inhere\runMe.ps1"""
 $trigger = New-ScheduledTaskTrigger -At 22:00 -Daily
