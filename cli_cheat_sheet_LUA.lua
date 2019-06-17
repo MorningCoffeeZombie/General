@@ -2,6 +2,11 @@
 -- https://www.lua.org/pil/contents.html
 -- Lua IS case-sensitive
 
+-- INSTALL & RUN LUA ON SOLUS LINUX:
+-- sudo eopkg it lua51
+-- sudo eopkg it lua
+-- luajit myLuaTestfile.lua
+
 --[[
 	This is a block quote
 	It goes across many lines
