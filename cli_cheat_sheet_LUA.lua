@@ -1,3 +1,7 @@
+#!/usr/local/bin/lua
+#!/usr/bin/luajit
+-- That is the standard LUA header, followed by one that works on Solus Linux.
+
 -- Comment
 -- https://www.lua.org/pil/contents.html
 -- Lua IS case-sensitive
@@ -50,6 +54,9 @@
 -- Echo to console
 print("Hello world")
 
+-- Print the current version of LUA / LUAJIT you're running (with a new line afterwards)
+io.write(_VERSION,"\n")
+
 -- Declare a global variable then print it
 varNumber = 10 * 15
 varDifferentNumber = 10
@@ -99,10 +106,21 @@ end
 
 -- Here's a while loop...but it's not working
 --local i = 1
-	--while a[i] do
-		--print(a[i])
-		--i = i + 1
+--while a[i] do
+	--print(a[i])
+	--i = i + 1
 --end
+
+-- Here's an infinite loop:
+while( true )
+do
+   print("This loop will run forever.")
+end
+
+
+
+
+
 
 
 
