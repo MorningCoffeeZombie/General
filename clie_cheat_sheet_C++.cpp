@@ -12,12 +12,16 @@
 
 
 	// LOGIC
-	Less than: a < b
-	Less than or equal to: a <= b
-	Greater than: a > b
-	Greater than or equal to: a >= b
-	Equal to a == b
-	Not Equal to: a != b
+	Less than: 		a < b
+	Less than or equal to: 	a <= b
+	Greater than: 		a > b
+	Greater than or equal to: 	a >= b
+	Equal to 		a == b
+	Not Equal to: 		a != b
+	And 			&& 
+	Or 			||
+	Conditional 		?: 
+	Assignments		= += -= *= /= %=>>= <<= &= ^= |=
 
 ***************************************************************************************************************/
 
@@ -28,7 +32,13 @@
 // COMMON HEADERS / LIBRARIES / INCLUDES REFERENCED:
 #include<stdio.h>
 #include<iostream>
+#include<fstream>	// Stream class to both read and write from/to files. (This is how you write to logs)
+	// ofstream is stream class to write on files
+	// ifstream is stream class to read from files
 using namespace std;
+
+
+
 
 
 // Print to screen:
@@ -140,6 +150,30 @@ int main(){
 	// Print out the values of the attribute in this object:
 	cout << objMyNewObject.varCoolNumber << endl;
 	cout << objMyNewObject.varCoolWords << endl;
+	return 0;
 }
+
+
+// (Not fully working)- Writing to logs 
+inline void dumpFileName(){
+	cout << __FILE__;
+}
+int main( int argc, char* argv[] ) {	// int main will need "int argc, char* argv[]"
+	dumpFileName();
+	cout << "Another way to find this file name is: " << argv[0];
+	return 0;
+}
+
+
+// Accept arguments passed into the program:
+int main( int argc, char** argv[] ) {	// int main will need "int argc, char** argv[]"
+	cout << argv[1] <<endl;		// This is how you call all arguments, increasing the number each time (0 is the script's name). This is the same as Bash/Shell
+	for (int i = 0; i < argc; ++i) 
+		cout << argv[i] << "\n";
+	return 0;
+}
+
+
+
 
 
