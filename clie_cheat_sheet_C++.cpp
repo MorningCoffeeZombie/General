@@ -11,6 +11,11 @@
 	./cppTesterAsExecutable
 
 
+	// MY COMMON/CUSTOM HEADERS
+	#include "Headers/funLogger.h"
+	#include "Headers/funProgramName.h"
+
+
 	// LOGIC
 	Less than: 		a < b
 	Less than or equal to: 	a <= b
