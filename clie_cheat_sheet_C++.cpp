@@ -35,9 +35,16 @@
 
 
 // COMMON HEADERS / LIBRARIES / INCLUDES REFERENCED:
-#include<stdio.h>
+#include<stdio.h>	// Allows printf command
+#include<ctime>
+#include<cstdio>	// Redirection of stderr and stdout text to log files.
+#include<algorithm>	// Can be used for sed/awk/etc. find and replace functions
 #include<iostream>
 #include<fstream>	// Stream class to both read and write from/to files. (This is how you write to logs)
+#include<stdlib.h>	// For realpath
+#include<sys/param.h>	// For PATH_MAX (the maximum length of a path).	
+#include<string.h>	// For strerror.
+#include<errno.h>	// For errno.
 	// ofstream is stream class to write on files
 	// ifstream is stream class to read from files
 using namespace std;
