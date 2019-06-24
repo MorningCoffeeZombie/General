@@ -123,4 +123,9 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 # Enable PoSh scripting on device (open PoSh in admin mode)
 Set-ExecutionPolicy RemoteSigned
 
+# Create parameters/arguments. Parameters must be first line of code:
+Param($myArgument, $anotherArgument)
+
+
+
 
