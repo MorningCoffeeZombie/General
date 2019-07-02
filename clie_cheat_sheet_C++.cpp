@@ -227,3 +227,8 @@ DWORD username_len = UNLEN+1;
 GetUserName(username, &username_len);
 
 
+// Hide the program's window (run in background)
+ShowWindow (GetConsoleWindow(), SW_HIDE);	// This is for 64bit .exe
+ShowWindow(hWnd, SW_HIDE)	// This is for 32bit .exe
+
+
