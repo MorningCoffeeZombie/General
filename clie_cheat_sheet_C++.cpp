@@ -3,13 +3,22 @@
 	// # Install a C compiler on Solus Linux:
 	sudo eopkg it gcc
 	sudo eopkg it -c system.devel	# This is the Solus equivalent to "build-essentials"
-
-
+	
+	// # Install C compiler on Ubuntu/Debian
+	sudo apt-get install gcc
+	sudo apt-get build-essential
+	
 	// # Compile a test file and output it as an executable. Run it the same way as any Shell script
 	// # Use "g++" not "gcc" for C++ scripts...
 	g++ cppTester.cpp -o cppTesterAsExecutable
 	./cppTesterAsExecutable
 
+	// Compile file to .exe for windows
+	sudo apt-get install mingw-w64	# This is the mandatory package used for creating windows compatible .exe files
+	i686-w64-mingw32-g++ -o myFile32.exe myFile.cpp		# Compile C++ to 32bit .exe
+	i686-w64-mingw32-gcc -o myFile32.exe myFile.c		# Compile C to 32bit .exe
+	x86_64-w64-mingw32-g++ -o myFile64.exe myFile.cpp	# Compile C++ to 64bit .exe
+	x86_64-w64-mingw32-gcc -o myFile64.exe myFile.cpp	# Compile C to 64bit .exe
 
 	// MY COMMON/CUSTOM HEADERS
 	#include "Headers/funLogger.h"
