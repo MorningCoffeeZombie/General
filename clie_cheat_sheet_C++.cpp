@@ -218,3 +218,12 @@ int main(int argc, char** argv) {
 #include <stdlib.h>
 sleep(5);
 
+
+// Grab windows username:
+#include <windows.h>	// Call in windows API headers
+#include <Lmcons.h>>	// Call in windows API headers
+char username[UNLEN+1];
+DWORD username_len = UNLEN+1;
+GetUserName(username, &username_len);
+
+
