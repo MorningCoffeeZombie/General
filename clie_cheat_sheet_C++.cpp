@@ -50,7 +50,8 @@
 #include<ctime>
 #include<cstdio>	// Redirection of stderr and stdout text to log files.
 #include<algorithm>	// Can be used for sed/awk/etc. find and replace functions
-#include<iostream>
+#include<iostream>	// Allows cout
+#include <stdlib.h>     // For using the function sleep
 #include<fstream>	// Stream class to both read and write from/to files. (This is how you write to logs)
 #include<stdlib.h>	// For realpath
 #include<sys/param.h>	// For PATH_MAX (the maximum length of a path).	
@@ -208,6 +209,12 @@ int main(int argc, char** argv) {
 }
 
 
-// Sleep (or wait) 5 seconds
+// Sleep (or wait) 5 seconds. One of these headers enables the use of sleep: 
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+#include <dos.h>
+#include <windows.h>
+#include <stdlib.h>
 sleep(5000);
 
