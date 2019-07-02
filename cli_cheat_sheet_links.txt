@@ -22,10 +22,12 @@ exit
 ##:: Winzip		File Compression	http://www.winzip.com/win/en/downarc.html
 ##:: [Regex]		Regular expression help	https://regexr.com/
 ##:: Powershell 	Regex statements  	https://kevinmarquette.github.io/2017-07-31-Powershell-regex-regular-expression/
+##:: LUA    Basic intro      https://www.lua.org/pil/contents.html
+##:: C++    Basic intro      http://www.cplusplus.com/doc/tutorial/
 ##:: 
 ##:: 
 ##:: 
-
+##:: 
 
 
 
