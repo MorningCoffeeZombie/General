@@ -12,6 +12,8 @@
 	// # Use "g++" not "gcc" for C++ scripts...
 	g++ cppTester.cpp -o cppTesterAsExecutable
 	./cppTesterAsExecutable
+	// Adding -static-libgcc -static-libstdc++ will compile the finished executable with all required libraries. Ex:
+		// g++ -static-libgcc -static-libstdc++ cppTester.cpp -o cppTesterAsExecutable
 
 	// Compile file to .exe for windows
 	sudo apt-get install mingw-w64	# This is the mandatory package used for creating windows compatible .exe files
