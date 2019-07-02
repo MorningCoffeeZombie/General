@@ -216,5 +216,5 @@ int main(int argc, char** argv) {
 #include <dos.h>
 #include <windows.h>
 #include <stdlib.h>
-sleep(5000);
+sleep(5);
 
