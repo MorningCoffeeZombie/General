@@ -232,3 +232,12 @@ ShowWindow (GetConsoleWindow(), SW_HIDE);	// This is for 64bit .exe
 ShowWindow(hWnd, SW_HIDE)	// This is for 32bit .exe
 
 
+// Grab system (OS) environmental variables without using a shell. (This one grabs your user directory):
+#include <iostream>
+#include <cstdlib>
+int main()
+{
+    if(const char* env_p = std::getenv("USERPROFILE"))
+        std::cout << "Your PATH is: " << env_p << '\n';
+}
+
