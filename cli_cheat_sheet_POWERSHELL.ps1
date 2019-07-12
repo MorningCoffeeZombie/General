@@ -136,4 +136,7 @@ Get-Size C:\Users\rmj\Desktop\PIM8.1.1.03
 $size = [decimal](Get-Size C:\Users\rmj\Desktop\PIM8.1.1.03)	# Must convert to decimal
 $size * 0.72
 
+# Change text color and background (also doesn't create a carriage return)
+Write-Host "I am red text on yellow highlighter" -ForegroundColor Red -BackgroundColor Yellow -NoNewline
+
 
