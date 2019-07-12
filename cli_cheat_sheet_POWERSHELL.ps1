@@ -126,6 +126,14 @@ Set-ExecutionPolicy RemoteSigned
 # Create parameters/arguments. Parameters must be first line of code:
 Param($myArgument, $anotherArgument)
 
-
+# Display how large a folder (and all sub folders) is in storage:
+function Get-Size {
+    # https://superuser.com/questions/631092/how-can-i-find-the-size-of-a-folder-using-powershell
+    param([string]$pth)
+    "{0:n2}" -f ((gci -path $pth -recurse | measure-object -property length -sum).sum /1GB)# + " mb"
+}
+Get-Size C:\Users\rmj\Desktop\PIM8.1.1.03
+$size = [decimal](Get-Size C:\Users\rmj\Desktop\PIM8.1.1.03)	# Must convert to decimal
+$size * 0.72
 
 
