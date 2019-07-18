@@ -139,4 +139,12 @@ $size * 0.72
 # Change text color and background (also doesn't create a carriage return)
 Write-Host "I am red text on yellow highlighter" -ForegroundColor Red -BackgroundColor Yellow -NoNewline
 
+# Determine if a user's device is a server or pc:
+$osInfo = Get-WmiObject -Class Win32_OperatingSystem
+$osInfo.ProductType
+<#
+Work Station (1)
+Domain Controller (2)
+Server (3)
+#>
 
