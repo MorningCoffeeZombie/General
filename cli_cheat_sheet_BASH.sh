@@ -14,7 +14,7 @@ exit
 #!/bin/bash
 
 # Bash History and similar logs are located at:
-/home/$USER/.bash_history
+/home/$USER/.bash_history		# You may also type `history` to view in terminal
 
 # Pause currently running command (2 variants)
 $HOST.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown") | OUT-NULL
