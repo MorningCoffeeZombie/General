@@ -26,8 +26,9 @@ $Env:
 # How to find what version of PowerShell you are running:
 $psversiontable
 
-# Tail files in PS
+# Tail files in PS. ( microsoft's stupid way of doing `tail -f`)
 Get-Content ./log.log -Wait -Tail 10
+Get-Content -Path "C:\scripts\test.txt" -Wait
 
 # How to create a logfile/send text to file
 $logFile = "globalCompressor.log"
@@ -60,9 +61,6 @@ Get-Date -Format HHmmss
 
 # Microsoft's stupid way of doing `diff`:
 compare-object (get-content one.txt) (get-content two.txt)
-
-# Microsoft's stupid way of doing `tail -f`:
-Get-Content -Path "C:\scripts\test.txt" -Wait
 
 # microsoft's way of using `curl` to find your own IP address (resolver is interchangable)
 Invoke-RestMethod "icanhazip.com"
@@ -115,13 +113,13 @@ function tableDemo() {
 # Fix "Unsigned certificate / not digitally signed" issues when running a script from another PC:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
+# Enable PoSh scripting on device (open PoSh in admin mode)
+Set-ExecutionPolicy RemoteSigned
+
 # Find and replace within all files inside of variable $FINDIN
 (Get-Content $FINDIN\*) -replace 'Look for me', 'Replace with me' | Set-Content $FINDIN\*
 # or:
 (Get-Content $FINDIN\*) -replace "$firstVar$secondVar", $firstVar | Set-Content $FINDIN\*
-
-# Enable PoSh scripting on device (open PoSh in admin mode)
-Set-ExecutionPolicy RemoteSigned
 
 # Create parameters/arguments. Parameters must be first line of code:
 Param($myArgument, $anotherArgument)
