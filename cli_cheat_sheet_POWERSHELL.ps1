@@ -26,6 +26,12 @@ $Env:
 # How to find what version of PowerShell you are running:
 $psversiontable
 
+# View session 'bash history'
+Get-History
+
+# Windows 10 'bash history' location
+%userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+
 # Tail files in PS. ( microsoft's stupid way of doing `tail -f`)
 Get-Content ./log.log -Wait -Tail 10
 Get-Content -Path "C:\scripts\test.txt" -Wait
