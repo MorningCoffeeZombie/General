@@ -5,6 +5,7 @@
 
 # CREATE A NEW BRANCH (this example creates a branch named 'dev_example')
 git checkout -b dev_example
+git push --set-upstream origin dev_example
 
 
 # SWITCH WHICH BRANCH YOU"RE WORKING ON (in this example you're switching onto the 'dev_example' branch)
