@@ -152,3 +152,10 @@ Domain Controller (2)
 Server (3)
 #>
 
+# Convert a bad UNC/Microsoft address to a [standard format]
+$badPath = "Microsoft.PowerShell.Core\FileSystem::\\P1-PIM.companycorp.local\E$\MyFiles\"
+$goodPath = Convert-Path $badPath
+echo "BAD: $PowerShell"
+echo "GOOD: $goodPath"
+
+
