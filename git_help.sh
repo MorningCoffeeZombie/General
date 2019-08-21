@@ -24,3 +24,7 @@ git status
 git checkout master
 git merge dev_example
 git push
+
+# Force a git pull if the cloud repo is the more up-to-date version (will loose all local changes)
+git fetch --all
+git reset --hard origin/dev_example   # You could alternatively use:   git reset --hard origin/master
