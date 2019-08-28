@@ -161,3 +161,8 @@ echo "GOOD: $goodPath"
 # nmap on PowerShell
 Test-NetConnection 192.168.1.1 -Port 8080	# This will provide data on the listed IP address and port 8080
 
+# List all open ports on local pc/device
+netstat -an | select-string -pattern "listening"
+
+
+
