@@ -164,5 +164,8 @@ Test-NetConnection 192.168.1.1 -Port 8080	# This will provide data on the listed
 # List all open ports on local pc/device
 netstat -an | select-string -pattern "listening"
 
+# Simple archive and extract (respectively) with 7zip CLI
+7z a -tzip WhatToCallTheZipFile.zip c:\things\to\compress\* -r	# -tzip	Specify this should be a .zip file (could make it -trar or -tgz)
+7z e myzip.zip -o c:\where\to\save\decompress\ -r		# -r	Recursively add folders and subsequent files within
 
 
