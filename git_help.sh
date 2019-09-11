@@ -28,3 +28,14 @@ git push
 # Force a git pull if the cloud repo is the more up-to-date version (will loose all local changes)
 git fetch --all
 git reset --hard origin/dev_example   # You could alternatively use:   git reset --hard origin/master
+
+
+
+# How to log into existing account from new pc
+# Dont forget to get an ssh key from github.com and add it to GitGUI (if on windows)
+git config --global user.email "123asdf456@users.noreply.github.com"
+git config --global user.name "Account username"
+git rebase -i
+git commit --amend --reset-author
+git rebase --continue
+git push
