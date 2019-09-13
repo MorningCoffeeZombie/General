@@ -81,3 +81,23 @@ curl icanhazip.com
 # Echo contents of an array
 ar_my_array=(this is "my favorite" demonstration of an array)
 echo "${ar_my_array*]}"
+
+# Basic while loop syntax
+INSTALLDIR=$(pwd)
+mkdir First
+mkdir Second
+if [ "$1" = "" ] || [[ ! "$1" = * ]]; then
+	echo "Please enter an integer..."
+fi
+COUNTER=0
+while [ "$COUNTER" -lt "$1" ];
+do
+	COUNTER=$[COUNTER + 1]
+	echo $COUNTER
+	cd $INSTALLDIR/First/
+	touch $COUNTER.txt
+	cd $INSTALLDIR/Second/
+	touch $COUNTER.txt
+#	echo "hello">>Second/$COUNTER.txt
+done
+exit
