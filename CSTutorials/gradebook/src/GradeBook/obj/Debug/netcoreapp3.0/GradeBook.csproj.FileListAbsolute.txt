@@ -1,0 +1,11 @@
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook.deps.json
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook.runtimeconfig.json
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook.runtimeconfig.dev.json
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook.dll
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/bin/Debug/netcoreapp3.0/GradeBook.pdb
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/Debug/netcoreapp3.0/GradeBook.csprojAssemblyReference.cache
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/Debug/netcoreapp3.0/GradeBook.AssemblyInfoInputs.cache
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/Debug/netcoreapp3.0/GradeBook.AssemblyInfo.cs
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/Debug/netcoreapp3.0/GradeBook.dll
+/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/Debug/netcoreapp3.0/GradeBook.pdb
