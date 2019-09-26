@@ -39,3 +39,8 @@ git rebase -i
 git commit --amend --reset-author
 git rebase --continue
 git push
+
+# Switch to nano (instead of vim) as an editor
+git config --global core.editor "nano"
+
+
