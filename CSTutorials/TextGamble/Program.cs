@@ -5,6 +5,12 @@ namespace TextGamble {
 	class Program {
 		static void Main(string[] args){
 
+			// Safety to catch if there are no args
+			if(args.Length <= 0){
+				Console.WriteLine("Hey...GIMME AN ARGUMENT!");
+				Environment.Exit(87);
+			}
+			
 			Random rnd = new Random();
 			if(args[0].Equals("roll") || args[0].Equals("tgshowall")) {
 				int intRoll = rnd.Next(1, 101); // Random integer 1-100
