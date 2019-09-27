@@ -6,17 +6,17 @@ namespace TextGamble {
 		static void Main(string[] args){
 
 			Random rnd = new Random();
-			if(args[0].Equals("roll")) {
+			if(args[0].Equals("roll") || args[0].Equals("tgshowall")) {
 				int intRoll = rnd.Next(1, 101); // Random integer 1-100
 				Console.WriteLine($"Random Roll: {intRoll}");
 			}
 
-			if(args[0].Equals("dice")) {
+			if(args[0].Equals("dice") || args[0].Equals("tgshowall")) {
 				int intDice = rnd.Next(1, 7);   // Random integer 1-6
 				Console.WriteLine($"Random Dice: {intDice}");
 			}
 
-			if(args[0].Equals("coin") || args[0].Equals("coins")) {
+			if(args[0].Equals("coin") || args[0].Equals("coins") || args[0].Equals("tgshowall")) {
 				int intCoin = rnd.Next(0, 2);   // Random integer 0-1
 				if(intCoin == 1){
 					Console.WriteLine($"Random Coin: {intCoin} (aka Tails)");
@@ -81,7 +81,7 @@ namespace TextGamble {
 				"Three of Diamonds",
 				"Two of Diamonds"
 			};
-			if(args[0].Equals("card") || args[0].Equals("cards")) {
+			if(args[0].Equals("card") || args[0].Equals("cards") || args[0].Equals("tgshowall")) {
 				int intCard = rnd.Next(lisCards.Count);
 				Console.WriteLine($"Random Card: {lisCards[intCard]}");
 			}
