@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vmubuntu/Desktop/gradebook/src/GradeBook/GradeBook.csproj",
+      "projectUniqueName": "/home/vmubuntu/Desktop/General/CSTutorials/gradebook/src/GradeBook/GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "/home/vmubuntu/Desktop/gradebook/src/GradeBook/GradeBook.csproj",
+      "projectPath": "/home/vmubuntu/Desktop/General/CSTutorials/gradebook/src/GradeBook/GradeBook.csproj",
       "packagesPath": "/home/vmubuntu/.nuget/packages/",
-      "outputPath": "/home/vmubuntu/Desktop/gradebook/src/GradeBook/obj/",
+      "outputPath": "/home/vmubuntu/Desktop/General/CSTutorials/gradebook/src/GradeBook/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/vmubuntu/.nuget/NuGet/NuGet.Config"
