@@ -1,0 +1,11 @@
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble.deps.json
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble.runtimeconfig.json
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble.runtimeconfig.dev.json
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble.dll
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/bin/Debug/netcoreapp3.0/TextGamble.pdb
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/obj/Debug/netcoreapp3.0/TextGamble.csprojAssemblyReference.cache
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/obj/Debug/netcoreapp3.0/TextGamble.AssemblyInfoInputs.cache
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/obj/Debug/netcoreapp3.0/TextGamble.AssemblyInfo.cs
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/obj/Debug/netcoreapp3.0/TextGamble.dll
+/home/vmubuntu/Desktop/General/CSTutorials/TextGamble/obj/Debug/netcoreapp3.0/TextGamble.pdb
