@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;   // Used for the `List<double> grades` type
+using System.Collections.Generic;   // Used for the `List<double>` type
 
 namespace TextGamble {
 	class Program {
@@ -8,21 +8,27 @@ namespace TextGamble {
 			// Safety to catch if there are no args
 			if(args.Length <= 0){
 				Console.WriteLine("Hey...GIMME AN ARGUMENT!");
+				Console.WriteLine("Enter `tgall` to just show all odds.");
 				Environment.Exit(87);
 			}
 			
 			Random rnd = new Random();
-			if(args[0].Equals("roll") || args[0].Equals("tgshowall")) {
+			if(args[0].Equals("roll") || args[0].Equals("tgall")) {
 				int intRoll = rnd.Next(1, 101); // Random integer 1-100
 				Console.WriteLine($"Random Roll: {intRoll}");
 			}
 
-			if(args[0].Equals("dice") || args[0].Equals("tgshowall")) {
+			if(args[0].Equals("dice") || args[0].Equals("tgall")) {
 				int intDice = rnd.Next(1, 7);   // Random integer 1-6
 				Console.WriteLine($"Random Dice: {intDice}");
 			}
+			
+			if(args[0].Equals("mult") || args[0].Equals("tgall")) {
+				int intMult = rnd.Next(-1, 2);   // Random integer -1-1
+				Console.WriteLine($"Random Multiplier: {intMult}");
+			}
 
-			if(args[0].Equals("coin") || args[0].Equals("coins") || args[0].Equals("tgshowall")) {
+			if(args[0].Equals("coin") || args[0].Equals("coins") || args[0].Equals("tgall")) {
 				int intCoin = rnd.Next(0, 2);   // Random integer 0-1
 				if(intCoin == 1){
 					Console.WriteLine($"Random Coin: {intCoin} (aka Tails)");
@@ -87,7 +93,7 @@ namespace TextGamble {
 				"Three of Diamonds",
 				"Two of Diamonds"
 			};
-			if(args[0].Equals("card") || args[0].Equals("cards") || args[0].Equals("tgshowall")) {
+			if(args[0].Equals("card") || args[0].Equals("cards") || args[0].Equals("tgall")) {
 				int intCard = rnd.Next(lisCards.Count);
 				Console.WriteLine($"Random Card: {lisCards[intCard]}");
 			}
