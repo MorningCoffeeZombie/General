@@ -23,7 +23,12 @@ namespace TextGamble {
 				Console.WriteLine($"Random Dice: {intDice}");
 			}
 			
-			if(args[0].Equals("mult") || args[0].Equals("tgall")) {
+			if(args[0].Equals("raz") || args[0].Equals("razzle") || args[0].Equals("tgall")) {
+				int intRazzle = rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7);   // Random integer 1-6
+				Console.WriteLine($"Razzle Dazzle: {intRazzle}");
+			}
+			
+			if(args[0].Equals("mult") || args[0].Equals("multi") || args[0].Equals("tgall")) {
 				int intMult = rnd.Next(-1, 2);   // Random integer -1-1
 				Console.WriteLine($"Random Multiplier: {intMult}");
 			}
