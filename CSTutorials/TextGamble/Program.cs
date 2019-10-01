@@ -49,9 +49,9 @@ namespace TextGamble {
 			if(args[0].Equals("russian") || args[0].Equals("russianroulette") || args[0].Equals("revolver") || args[0].Equals("rroulette") || args[0].Equals("tgall")) {
 				int intRevolver = rnd.Next(1, 7);   // Random integer 1-6
 				if(intRevolver == 1){
-					Console.WriteLine($"Russian Roulette: {intRevolver} ...cylinder spins... BANG!");
+					Console.WriteLine($"Russian Roulette: {intRevolver} Loading one round, spinning cylinder... BANG!");
 				} else {
-					Console.WriteLine($"Russian Roulette: {intRevolver} ...cylinder spins... *click*");
+					Console.WriteLine($"Russian Roulette: {intRevolver} Loading one round, spinning cylinder... *click*");
 				}
 			}
 
