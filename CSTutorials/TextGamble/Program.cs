@@ -24,8 +24,10 @@ namespace TextGamble {
 			}
 			
 			if(args[0].Equals("raz") || args[0].Equals("razzle") || args[0].Equals("tgall")) {
-				int intRazzle = rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7);   // Random integer 1-6
-				Console.WriteLine($"Razzle Dazzle: {intRazzle}");
+				int intRazzle6 = rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7);   // Random integer 1-6
+				Console.WriteLine($"Razzle Dazzle - 6 Dice: {intRazzle6}");
+				int intRazzle8 = rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7) + rnd.Next(1, 7);   // Random integer 1-6
+				Console.WriteLine($"Razzle Dazzle - 8 Dice: {intRazzle8}");
 			}
 			
 			if(args[0].Equals("mult") || args[0].Equals("multi") || args[0].Equals("tgall")) {
