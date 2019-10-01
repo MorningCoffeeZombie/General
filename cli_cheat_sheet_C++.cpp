@@ -76,8 +76,10 @@ int main(void){
 
 
 // Declare variables. Format is: type name = value;
+var varFigureItOut = 100;	// The var type 'var' tells C# (maybe not C++, unsure) to just figure out what actual var type it is based on the input data.
 int varInteger = 123;
-double varDecimal = 12.3;
+double varDecimal = 12.3;	// This is a floating decimal which is 2x more precise than a `float` variable (when using math, etc.). It also takes up more resources
+float varFloatDecimal = 45.6;
 char varCharacter = 'a';	// Char strings must be wrapped in 'single quotes'
 string varString = "This is a string whereas the character variables may only be a single letter";
 bool varBoolean = true;		// Accepts "yes" "no" true false 1 0. Notice the Yes/No must be in "double quotes".
