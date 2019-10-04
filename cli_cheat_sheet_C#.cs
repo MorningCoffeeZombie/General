@@ -34,7 +34,18 @@ mcs helloworld.cs
 namepace MyNamespaceHere { class MyClassHere { static void Main(string[] args) { Console.WriteLine($"My codes should be in the same heirarchy as this Console.WriteLine");  Console.WriteLine($"Or just next to it..."); } } }
 	// Also please only have 1 class per .cs file. Standard conventions for making sure code isn't too crazy.
 
+// Generally the top level (next to /src/) will have a /test/ folder with a "ProjectName.text" folder in it. This is where you automatically test you code with these commands:
+	// It will determine passed/failed tests based of the defined tests in UnitTest.cs files
+dotnet new xunit
+dotnet test
 
+// To test specific classes you will have to add their references to the test classes:
+dotnet add reference ../file/path/to/myproject.csproj
+
+// Create a 'solution file' to manage all projects added to it (for testing/etc.)
+dotnet new sln// typed at the top level of a project
+dotnet sln add parth/to/my/projectfile.csproj	// Add example project to the solutions file
+	// This will make it so `dotnet build` builds and executs all files name via `sln add`
 
 
 

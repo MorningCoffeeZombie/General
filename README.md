@@ -11,3 +11,7 @@ Using the option *-am* allows you to add and create a message for the commit in 
 
 **How to save your username on a \*nix system:**  
 `git config --global credential.username $USER`
+
+**.gitignore patters**
+[https://www.atlassian.com/git/tutorials/saving-changes/gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+
