@@ -113,6 +113,26 @@ namespace TextGamble {
 				int intCard = rnd.Next(lisCards.Count);
 				Console.WriteLine($"Random Card: {lisCards[intCard]}");
 			}
+			
+			if(args[0].Equals("help")) {
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine($"COMMAND \t DESCRIPTION");
+				Console.WriteLine($"======================");
+				Console.ResetColor();	// Reset bold/coloring font
+				Console.WriteLine($"\troll \t Generate a random number 1-100.");
+				Console.WriteLine($"\tdice \t Generate a random number 1-6.");
+				Console.WriteLine($"\traz \t Begin a game of RazzleDazzel by rolling 6 or 8 dice simultaneously.");
+				Console.WriteLine($"\tmult \t Generate a random number to be used as a multiplier -1 - 1");
+					Console.WriteLine($"\t\t AKA: multi");
+				Console.WriteLine($"\tcoin \t Flip a coin - heads or tails.");
+					Console.WriteLine($"\t\t AKA: coinss");
+				Console.WriteLine($"\trussian \t Begin a game of Russian Roulette with a 6-shot revolver");
+					Console.WriteLine($"\t\t AKA: russianroulette, revolver, rroutlette");
+				Console.WriteLine($"\tcard \t Draw a card from a standard 52 card deck.");
+					Console.WriteLine($"\t\t AKA: cards");
+				Console.WriteLine($"\ttgall \t Run all commands simultaneously for testing/demo.");
+			}
+			
 		}
 	}
 }
