@@ -168,4 +168,5 @@ netstat -an | select-string -pattern "listening"
 7z a -tzip WhatToCallTheZipFile.zip c:\things\to\compress\* -r	# -tzip	Specify this should be a .zip file (could make it -trar or -tgz)
 7z e myzip.zip -o c:\where\to\save\decompress\ -r		# -r	Recursively add folders and subsequent files within
 
-
+# How to `grep`
+echo "Hello world" | Select-String -Pattern "Hello"
