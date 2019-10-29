@@ -6,7 +6,7 @@ namespace GradeBook.Tests
     public class BookTests
     {
         [Fact]
-        public void Test1()
+        public void BookCalculatesAnAverageGrade()
         {
             // ARRANGE
             var book = new Book("");
@@ -16,7 +16,6 @@ namespace GradeBook.Tests
 
             // ACT
            var varResult = book.GetStatistics();
-
            
             // ASSERT
             Assert.Equal(85.6, varResult.Average, 1);   // The last argument is the 'precision'... how many decimals to expect/analyze
