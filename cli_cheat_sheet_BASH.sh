@@ -53,6 +53,7 @@ printf " %s %d", $string1 $int1
 You can space according to your screen, by using %20s for using 20 characters for the string, %12d for the integer.
 Format control options are also available :
 \n : newline
+\r : return (can combine with \r\n for return+newline)
 \t : tab(horizontal)
 \v : tab(vertical)
 # Example

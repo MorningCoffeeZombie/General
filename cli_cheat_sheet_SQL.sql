@@ -29,5 +29,7 @@ SET SHOWPLAN_TEXT OFF
 SET SHOWPLAN_XML OFF
 
 
+-- Determine the server instance for MS SQL
+select @@servername + '\' + @@servicename
 
 
