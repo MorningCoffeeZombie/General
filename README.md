@@ -31,6 +31,7 @@ Symlink the folder to allow shebang style execution:
 Download the Linux TOS installer .sh file from https://mediaserver.thinkorswim.com/installer/install.html   
 Run it with   
 	`sh ./thinkorswim_installer.sh`   
+Copy the thinkorswim launcher from your Desktop to /usr/share/applications/ for it to appear in start menus   
 Also helpful:   
 	https://mediaserver.thinkorswim.com/installer/install.html   
 	https://getsol.us/articles/software/java/en/   
