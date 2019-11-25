@@ -45,7 +45,6 @@ for i in range(5):
 
 
 # Common imports & their uses
-<<<<<<< HEAD
 	# You can create your own scripts to import via relative locations. Just make sure to save the files as .py but import them by their name without file extension (ex: myfile.py imports as myfile)
 		# You may have to exit python and re open it to be able to import the script though
 import math    # allows for more complex mathematical functions
@@ -54,7 +53,6 @@ import sys
 =======
 import math    # allows for more complex mathematical functions
     math.sqrt(81)    # find the square root of 81
->>>>>>> bbe520db81056d4ba664f84f40c1d731a46de07d
 
 
 # Import a function from a library but in a shorthand form (instead of math.factorial it becomes factorial or fac)
@@ -185,7 +183,6 @@ for color in colors:
 	print(color, colors[color])
 
 
-<<<<<<< HEAD
 # Grab data from web and store to list
 from urllib.request import urlopen
 with urlopen('http://sixty-north.com/c/t.txt') as story:
@@ -261,8 +258,3 @@ This documentation will be what appears when someone types `help`.
 
 
 
-
-
-
-=======
->>>>>>> bbe520db81056d4ba664f84f40c1d731a46de07d

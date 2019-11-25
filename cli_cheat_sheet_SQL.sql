@@ -17,7 +17,7 @@ SSSSSSSSS	 QQQQQQQQ Q	LLLLLLLLL
 /* This 
 is
 a 
-multiline
+multi line
 comment
 */
 
@@ -29,7 +29,21 @@ SET SHOWPLAN_TEXT OFF
 SET SHOWPLAN_XML OFF
 
 
+-- Determine basic database and storage settings/info
+sp_helpdb [my_database_name]
+
+USE [my_database_name]
+GO
+
+EXECUTE sp_spaceused
+GO
+
+SELECT name, type_desc, size, growth, is_percent_growth
+	FROM [my_database_name].sys.database_files;
+
+
+-- View all transactions currently being processed
+DBCC OPENTRAN
+
 -- Determine the server instance for MS SQL
 select @@servername + '\' + @@servicename
-
-

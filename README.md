@@ -15,3 +15,28 @@ Using the option *-am* allows you to add and create a message for the commit in 
 **.gitignore patters**
 [https://www.atlassian.com/git/tutorials/saving-changes/gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
 
+
+
+# Install .exe Files With WINE   
+`winecfg`    
+`wine /path/to/my_program.exe`   
+
+# Install ThinkOrSwim (TDAmeritrade) On Solus
+Download the 64bit Java .tar.gz file from https://java.com/en/download/linux_manual.jsp   
+Unzipthe tarball with:  
+	`tar xf jre-8u*-linux-x64.tar.gz`    
+Move the "jre*" folder to /opt/     
+Symlink the folder to allow shebang style execution:     
+	`sudo ln -svf /opt/jre1.8.0_*/bin/java /usr/bin/java`      
+Download the Linux TOS installer .sh file from https://mediaserver.thinkorswim.com/installer/install.html   
+Run it with   
+	`sh ./thinkorswim_installer.sh`   
+Also helpful:   
+	https://mediaserver.thinkorswim.com/installer/install.html   
+	https://getsol.us/articles/software/java/en/   
+
+
+
+
+
+
