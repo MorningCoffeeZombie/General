@@ -50,9 +50,7 @@ for i in range(5):
 import math    # allows for more complex mathematical functions
     math.sqrt(81)    # find the square root of 81
 import sys
-=======
-import math    # allows for more complex mathematical functions
-    math.sqrt(81)    # find the square root of 81
+import time		# Can be called with `time.ctime()`
 
 
 # Import a function from a library but in a shorthand form (instead of math.factorial it becomes factorial or fac)
@@ -226,11 +224,35 @@ This documentation will be what appears when someone types `help`.
 	# Using these is how you automatically make man pages
 
 
+# Create a plain-text header
+def banner (message, border='-'):
+	line = border * len(message)
+	print(line)
+	print(message)
+	print(line)
+
+banner("Im A Big Header")
+banner("Im A Header With A Different Border", "#")
+banner(border="*", message="Types Can Be Out Of Order If Declared")
 
 
+# Protect lists from adding their default at-infinitum when called without an argument
+def add_spam(menu=None):
+	if menu is None:	# Using "None" to check for "None"
+		menu = []
+	menu.append('spam')
+	return menu
+
+add_spam()
 
 
-
+# Display all objects used by an imported module
+import time
+type(time)	# See what it is
+dir(time)	# Displays all objects within the module
+type(time.clock_settime_ns)	# Tells you if the object is a function/var/etc.
+dir(time.ctime)	# Display attributes of a function
+time.ctime.__doc__	# Display the value of the attribute of a function.
 
 
 
