@@ -39,6 +39,7 @@ Get-Content -Path "C:\scripts\test.txt" -Wait
 # How to create a logfile/send text to file
 $logFile = "globalCompressor.log"
 $logFile = ($MyInvocation.MyCommand.Name + ".log")
+$logFile = $PSScriptRoot + "\" + ($MyInvocation.MyCommand.Name + ".log")
 Add-Content $logFile -value "Log file has been established!"
 
 # How to get the name of the currently running script (this file). This will include the file extension.
