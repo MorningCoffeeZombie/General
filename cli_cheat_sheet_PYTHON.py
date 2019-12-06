@@ -51,6 +51,9 @@ import math    # allows for more complex mathematical functions
     math.sqrt(81)    # find the square root of 81
 import sys
 import time		# Can be called with `time.ctime()`
+import urllib2	# Allows Python to visit websites. Ex:	urllib2.urlopen("http://www.python.org/")
+	sudo pip install BeautifulSoup	# urllib2 dependency
+	sudo pip install Requests		# urllib2 dependency
 
 
 # Import a function from a library but in a shorthand form (instead of math.factorial it becomes factorial or fac)
