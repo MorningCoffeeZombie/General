@@ -258,6 +258,112 @@ dir(time.ctime)	# Display attributes of a function
 time.ctime.__doc__	# Display the value of the attribute of a function.
 
 
+# Collections:
+tuple	# Unchanging sequences of data. Objects inside cannnot be changed or removed and new objects cannot be added.
+str		# Sequence of unicode characters
+range	# Mathematic progression of integers. Range accepts arguments of range(stop) range(start, stop) or range(start, stop, step)
+list	# A changeable list of objects
+dict	# Unordered mapping between (unchangeable) unique keys and their (changeable) values
+set		# Unordered collection of unique elements
+
+# Tuples
+t = ("Norway", 4.953, 3)
+t	# Display tuple contents
+t[0]	# Display the first value of the tuple
+len(t)	# Counts number of objects inside tuple
+for item in t:
+	print(item)
+
+a = ((220,284), (1184,1210), (2620, 2924))	# Tuples can be any object, even nested tuples
+a[2]
+# Tuples can be created empty or with a single object if there is a trailing comma in the structure. Ex:	a = (123,)
+
+# Strings
+s = "New" + "found" + "land"	# Strings can be concat with a + sign or using the += to add them to the end of an existing string var
+colors = ';'.join(['red', 'green', 'blue'])		# Use the .join function on a character to be used as a separator (in this case ; is used) to create a list. You could also join by not playing anything in the ''
+colors.split(';')	# Separate the colors back out based on the separator provided ( using ; again)
+pos = (65.2, 23.1, 82.2)	# See next line of code:
+"Interstellar position x={pos[0]} y={pos[1]} z={pos[2]}".format(pos=pos)	# Inserting values into a string
+
+# Ranges
+for i in range(5):	# Print all 5 values in this range (starts at 0)
+	print(i)
+
+list(range(5, 10))	# Lists all values in a 5-10 range
+list(range(0, 10, 2))	# Lists all values in a 5-10 range counting by 2s
+
+# Lists
+s = "show how to index into sequences".split()	# Using the split function breaks each word into being its own object for a list
+s[-2]	# s[2] would call the 3rd value from the start of a list...using -2 calls the 3rd value from the end
+s[1:4]	# Use a 'slice' to grab objects 1-3 from the list the stop value (4) is not included. slice = seq[start:stop]
+s[1:-1]	# Use negative indexing to grab all values except first and last
+s[3:]	# Index from #3 to the end of list
+s[:3]	# Index from start to value 3 (3 not included)
+full_slice = s[:]	# Copy the whole list. A more 'pythonic' way of doing it would be this however:	v = list(s)
+i = w.index('into')	# Sets the variable i to become an integer representing the index value (placement) of the word 'into'. Therefore you can do `w[i]` to return "into"
+del w[0]	# Delete an object from the list (an therefore shorten list)
+w.remove('into')	# Remove an object based on a searching for its value
+w.insert(2, "properly")	# Inserts value into the index #2. The string should now read "how to properly index sequences" (based on previous removals)
+w.reverse()	# Display the list backwards
+
+# Dictionaries
+urls = {'Google': 'google.com', 
+		'Ubuntu': 'ubuntu.com',
+		'IGN': 'ign.com',
+		'Reddit': 'reddit.com'}
+urls['Reddit']	# Return the value for the key titled "Reddit"
+# You can create other existing objects into dictionaries if they have matching key/value pairs
+for key in urls:
+	print("{key} => {value}".format(key=key, value=urls[key]))
+
+for value in urls.values():
+	print(value)	# Print each of the values in the dict. There is NO WAY TO RELIABLY grab key pairings based on supplied values
+
+urls['DuckDUckGo'] = 'duckduckgo.com'	# Add a new value to the dict
+from pprint import pprint as pp	# See line below
+pp(urls)	# Use Pretty Print to display the contents of the urls dict in a more readable manner
+
+# Sets
+p = {6, 28, 496, 8128, 33550336}	# Similar to a dictionary but does not have a value pair (single objects only)
+e = set()	# Using empty {} would create an empty dict, need to use the set() constructor to create an empty set.
+p.add(54)	# Adds a new value into the set. Adding a value that already exists (duplicate) has no effect and aldo does not produce an error.
+p.update([37, 128, 97])	# Add in multiple new elements.
+p.remove(54)	# Removes object from the set but if the object does not exist it throws error
+p.remove(6)	# Removes object from the set but if the object does not exist DOES NOT throw error
+
+# Sets can be used to determine what traits a value has across all criteria. Like finding out which value is in the center of a ven diagram or correctly narrowing things down in a game of 'Guess Who'
+blue_eyes = {'Olivia', 'Harry', 'Lily', 'Jack', 'Amelia'}
+blonde_hair = {'Harry', 'Jack', 'Amelia', 'Mia', 'Joshua'}
+smell_hcn = {'Harry', 'Amelia'}
+taste_ptc = {'Harry', 'Lily', 'Amelia', 'Lola'}
+o_blood = {'Mia', 'Joshua', 'Lily', 'Olivia'}
+b_blood = {'Amelia', 'Jack'}
+a_blood = {'Harry'}
+ab_blood = {'Joshua', 'Lola'}
+blue_eyes.union(blonde_hair)	# Display values in either/or set
+blue_eyes.intersect(blonde_hair)	# Display only the values present in BOTH sets
+blonde_hair.difference(blue_eyes)	# Display all values in the first set (blonde hair) but NOT in the second (eyes)
+blonde_hair.symmetric_difference(blue_eyes)	# People have either one OR the other but NOT both.
+smell_hcn.issubset(blonde_hair)	# Are all of all the people with in the first set also a member of the second set? Boolean (are HCN smellers all also blonde)
+taste_ptc.issuperset(smell_hcn)	# Can all the people that can taste PTC also smell HCN? Boolean. (are all of the people in HCN also in PTC?)
+a_blood.isdisjoin(o_blood)	# Test that 2 sets have nothing in common. Boolean output
+
+
+# Exception handling: should be coded in "exceptional.py" file
+import sys
+def convert(s):		# This code is being used to demonstrate error out
+	'''Convert to an integer.'''
+	try:	# You should throw all 'errorable' code into a single 'try' if possible just for simplicity
+		return int(s)
+	except (ValueError, TypeError, ZeroDivisionError): as e:		# By attaching the "as e:" you can view the full statement if needed (just print the value of variable e)
+		print("Conversion failed.{}".format(str(e)),
+				file=sys.stderr)
+		raise
+	return -1
+
+
+
+
 
 
 
