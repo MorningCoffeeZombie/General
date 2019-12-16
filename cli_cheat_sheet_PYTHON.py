@@ -349,7 +349,7 @@ taste_ptc.issuperset(smell_hcn)	# Can all the people that can taste PTC also sme
 a_blood.isdisjoin(o_blood)	# Test that 2 sets have nothing in common. Boolean output
 
 
-# Exception handling: should be coded in "exceptional.py" file
+# Exception handling
 import sys
 def convert(s):		# This code is being used to demonstrate error out
 	'''Convert to an integer.'''
