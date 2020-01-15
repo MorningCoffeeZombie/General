@@ -360,8 +360,65 @@ def convert(s):		# This code is being used to demonstrate error out
 				file=sys.stderr)
 		raise
 	return -1
+# Other exception types include "KeyError", and "IndexError"
+	# IndexError is raised when an integer index is out of range. Aka asking for the fifth value in a list of only four object.
+	# ValueError is when an object is the right type but has a bad value. Example: `int("Hello World")`
+	# KeyError is when you lookup a nonexistent mapping. Aka searching for a key that does not exist in a key/value pair
+# It is not standard of Python to protect against TypeError as they will likely be found automatically upon execution anyways
 
 
+# Platform Specific Code
+# Windows
+	# msvcrt	# Detect a single key press (ex: press any key to continue)
+
+# Linux & OSX
+	# sys	# Detect a single key press (ex: press any key to continue)
+	# tty	# Detect a single key press (ex: press any key to continue)
+	# termios	# Detect a single key press (ex: press any key to continue)
+
+
+# List Comprehensions
+words = "This is one big sentence which is used to demonstrate what List Comprehensions are".split()
+words
+[len(words) for word in words]
+lengths = []
+for word in words:
+	lengths.appens(len(word))
+
+lengths
+# The standard form of list comprehensions is:
+	# [ expr(item) for item in iterable ]
+
+# This example will count the amount of decimals there are in the first 20 factorials:
+from math import factorial
+f = [len(str(factorial(x))) for x in range(20)]
+f
+type(f)
+
+
+# Set Comprehensions. Sets follow the same syntax as List Comps. but use curly braces {}
+# Standard Expression:
+	# { expr(item) for item in iterable }
+
+# The difference between Sets and Lists are that Sets are unordered
+
+
+# Dictionary Comprehensions. Key/value pairings that allow you to map forwards and backwards (increasing searchability)
+country_to_capital = {'United Kingdom': 'London',
+					'Brazil': 'Brazilia',
+					'Morocco': 'Rabat',
+					'Sweden': 'Stockholm',}
+capital_to_country = {capital: country for country, capital in country_to_capital.items()}
+pp(capital_to_country)
+# If your Comprehension creates duplicate keys- later keys will overwrite older keys
+
+
+# Iteration
+# Iteratables are lists which will return the next value in the line each time the function is called as such:
+iterable = ['Spring', 'Summer', 'Fall', 'Winter']
+iterator = iter(iterable)
+next(iterator)
+# An exception will be raised upon completion of the list
 
 
 
