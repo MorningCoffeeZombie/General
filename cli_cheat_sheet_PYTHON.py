@@ -421,6 +421,94 @@ next(iterator)
 # An exception will be raised upon completion of the list
 
 
+# Generators
+# These are just iterables that compute the next value only when called. Used for managing data with no definite end (log files, data streams, etc.)
+def gen123():
+	yield 1
+	yield 2
+	yield 3
+
+g = gen123()
+g
+next(g)
+
+for v in gen123():
+	print(v)
+
+
+# Using generators that maintain their state
+# https://app.pluralsight.com/course-player?clipId=21fcdf35-489c-4d90-a6b2-0b82415caa90
+# Python Fundamentals Session 8: Stateful Generator Functions
+# Generators can be used to create very large/infinite sequences if needed.
+# This is an example of an infinite loop:	(use Ctrl+C to end loop)
+def lucas():
+	yield 2
+	a = 2
+	b = 1
+	while True:
+		yield b
+		a, b = b, a + b
+
+for x in lucas():
+	print(x)
+
+
+# This is a generator that will list the first 1 mil square numbers:
+million_squares = (x*x for x in range(1, 10000001))
+million_squares
+list(million_squares)
+list(million_squares)	# Now that the value has been called, the second time will be empty. To reuse it you much re-declare it
+# Lists will consume massive amounts of RAM to compute such a task. Using built-in functions increases speed and decreases hardware usage:
+sum(x*x for x in range(1, 10000001))
+
+
+# Built in interations
+# "itertools" is the module with many built in iterables. Examples:
+thousands = islice((x for x in count() if is_prime(x)), 1000)
+sum(islice((x for x in count() if is_prime(x)), 1000))	# This is the above var as an iterables
+any([False, False, True])	# Equivalent to an 'and' or 'or' operator. Replies true if ANY value is true
+all([False, False, True])	# Equivalent to an 'and' or 'or' operator. Replies true only if ALL values are true
+any(is_prime(x) for x in range(1328, 1361))	# This will check for any prime numbers between 1328-1361. (The answer is false)
+all(name == name.title() for name in ['London', 'New York', 'Sydney'])	# Checks if each value in the list is a proper noun/pronoun (capital letter)
+
+# The zip function allows 2 iterables to be linked together as a tuple: (these represent temeratures)
+sunday = [12, 13, 14, 15, 15, 17, 21, 21, 22, 22, 24, 20, 21, 18]
+monday = [13, 14, 14, 16, 20, 21, 20, 22, 18, 16, 15, 18, 20, 10]
+
+for item in zip(sunday, monday):	# Display tuple pairs
+	print(item)
+
+for sun, mon in zip(sunday, monday):	# Grab the average of each per tuple and display
+	print("average =", (sun + mon) / 2)
+
+tuesday = [2, 2, 3, 7, 9, 10, 11, 12, 10, 9, 8, 8]
+for temps in zip(sunday, monday, tuesday):
+	print("min={:4.1f}, max={:4.1f}, average={:4.1f}".format(min(temps), max(temps), sum(temps) / len(temps)))
+
+from itertools import chain
+temperatures = chain(sunday, monday, tuesday)
+
+# Check for days above freezing (0) without ruining memory usage:
+all(t > 0 for t in temperatures)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
