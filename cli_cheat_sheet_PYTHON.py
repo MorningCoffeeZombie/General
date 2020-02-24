@@ -492,6 +492,8 @@ temperatures = chain(sunday, monday, tuesday)
 all(t > 0 for t in temperatures)
 
 
+# Classes
+# Classes may not be empty, they require at least one command/value/etc.
 
 
 
