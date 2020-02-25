@@ -36,6 +36,10 @@ Also helpful:
 	https://mediaserver.thinkorswim.com/installer/install.html   
 	https://getsol.us/articles/software/java/en/   
 
+# End / Manage TTY Sessions  
+Ctrl + Alt + [F1 - F7 keys]	# This will switch to another TTY session  
+w	# This will list all active TTY sessions  
+systemctl stop getty@ttyX.service	# Replace the "X" in "ttyX" with the number of the TTY session you wish to kill  
 
 
 
