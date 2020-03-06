@@ -50,6 +50,13 @@ for i in range(5):
 import math    # allows for more complex mathematical functions
     math.sqrt(81)    # find the square root of 81
 import sys
+import os
+from collections import namedtuple
+import time
+from datetime import datetime
+import random
+from playsound import playsound
+	sudo pip install playsound	# Dependency
 import time		# Can be called with `time.ctime()`
 import urllib2	# Allows Python to visit websites. Ex:	urllib2.urlopen("http://www.python.org/")
 	sudo pip install BeautifulSoup	# urllib2 dependency
