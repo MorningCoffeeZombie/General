@@ -512,6 +512,11 @@ all(t > 0 for t in temperatures)
 
 
 
+print(os.getcwd())		# pwd command of python
+print(os.listdir(os.getcwd()))	# List contents of current dir
+time.sleep(5)			# Pause script for 5 seconds
+sys.exit()			# End script
+quit()				# End script
 
 
 
