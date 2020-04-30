@@ -171,3 +171,9 @@ netstat -an | select-string -pattern "listening"
 
 # How to `grep`
 echo "Hello world" | Select-String -Pattern "Hello"
+
+# Powershell equivalent of `touch`
+Set-ItemProperty -Name LastWriteTime -Value (Get-Date) -Path myfile.txt
+
+
+
