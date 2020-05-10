@@ -23,7 +23,7 @@ Using the option *-am* allows you to add and create a message for the commit in 
 
 # Install ThinkOrSwim (TDAmeritrade) On Solus
 Download the 64bit Java .tar.gz file from https://java.com/en/download/linux_manual.jsp   
-Unzipthe tarball with:  
+Unzip the tarball with:  
 	`tar xf jre-8u*-linux-x64.tar.gz`    
 Move the "jre*" folder to /opt/     
 Symlink the folder to allow shebang style execution:     
