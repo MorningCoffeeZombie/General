@@ -43,7 +43,7 @@ systemctl stop getty@ttyX.service	# Replace the "X" in "ttyX" with the number of
 
 # Search Within Text Recursively
 
-`grep -iRl "find this phrase here" --exclude=*.{png,jpg,xml,mkv,mp4,gz,msi,wav,vcr,exe,dat,mp3,dll,iso}`
+`grep -iRl "find this phrase here" --exclude=*.{png,jpg,xml,mkv,mp4,gz,msi,wav,vcr,exe,dat,mp3,dll,iso,gif,webm,psd,tga,bmp}`
 
 
 
