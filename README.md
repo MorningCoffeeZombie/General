@@ -22,6 +22,21 @@ Using the option *-am* allows you to add and create a message for the commit in 
 `wine /path/to/my_program.exe`   
 
 # Install ThinkOrSwim (TDAmeritrade) On Solus
+
+Unstall your distro's javajdk package from the repo. For Solus this is `eopkg it openjdk-11` or `openjdk-17`.  
+Symlink the java install for 3rd party apps to run: `sudo ln -svf /usr/lib64/openjdk-11 /usr/bin/java`  
+Download the Linux TOS installer .sh file from https://mediaserver.thinkorswim.com/installer/install.html   
+Run it with   
+	`sh ./thinkorswim_installer.sh`   
+Copy the thinkorswim launcher from your Desktop to /usr/share/applications/ for it to appear in start menus   
+Also helpful:   
+	https://mediaserver.thinkorswim.com/installer/install.html   
+	https://getsol.us/articles/software/java/en/   
+
+
+
+BELOW IS THE OUT DATED METHOD OF INSTALLING JAVA:
+
 Download the 64bit Java .tar.gz file from https://java.com/en/download/linux_manual.jsp   
 Unzip the tarball with:  
 	`tar xf jre-8u*-linux-x64.tar.gz`    
