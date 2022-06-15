@@ -23,7 +23,7 @@ Using the option *-am* allows you to add and create a message for the commit in 
 
 # Install ThinkOrSwim (TDAmeritrade) On Solus
 
-Unstall your distro's javajdk package from the repo. For Solus this is `eopkg it openjdk-11` or `openjdk-17`.  
+Install your distro's java-jdk package from the repo. For Solus this is `eopkg it openjdk-11` or `openjdk-17`.  
 Symlink the java install for 3rd party apps to run: `sudo ln -svf /usr/lib64/openjdk-11 /usr/bin/java`  
 Download the Linux TOS installer .sh file from https://mediaserver.thinkorswim.com/installer/install.html   
 Run it with   
